@@ -1,5 +1,11 @@
 package lab2;
 
+/*
+ * The objects of the type Snack will have a type, i.e. Cookie, Candy, Chips, they will have an
+ * associated cost, as well as an initial quantity. The constructor takes 3 arguments specifying
+ * the type, cost, and stock of that particular Snack Object.
+ */
+
 public class Snack {
 	private String snackType; 
 	private double snackCost;
@@ -36,8 +42,6 @@ public class Snack {
 	    return snackType;   
 	}
 	
-	public static void main(String[] args) {
-		Snack mySnack = new Snack("Potato Chips", 1.25, 10);
-		System.out.println(mySnack.getType());	
+	public static void main(String[] args) {	
 	}
 }
