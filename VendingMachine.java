@@ -2,6 +2,15 @@ package lab2;
 import java.util.*;
 import java.text.DecimalFormat;
 
+/*
+ * The VendingMachine class will create various Snack objects and perform operations which will
+ * facilitate the purchase of a Snack. Instances of VendingMachine are able to:
+ *  - Display a menu
+ *  - Accept payment
+ *  - Check funds and stock
+ *  - Dispense a snack and change where applicable 
+ */
+
 public class VendingMachine {
 	// create the snack objects sold by VM
 	private Snack Chips = new Snack("Chips", 1.50, 3);
@@ -149,22 +158,5 @@ public class VendingMachine {
 	public static void main(String[] args) {
 		VendingMachine myVM = new VendingMachine(3);
 		myVM.keepVending();
-
-		// ask buyer for money
-		// display snack menu
-		// ask buyer for choice
-		// check cash amount
-			// if buyer is short
-				// notify buyer they are short
-				// display their options
-		// if buyer provided enough cash
-			// check stock 
-				// if snack is stocked
-					// dispense snack
-					// give change where applicable
-				// if snack is sold out
-					// notify buyer to make another choice
-		
 	}
-
 }
